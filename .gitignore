@@ -1,0 +1,7 @@
+.svn
+.settings
+.idea
+.buildpath
+.project
+nbproject
+.DS_Store
