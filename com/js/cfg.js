@@ -5,34 +5,14 @@
  */
 
 var _HU_cfg={content_scripts_exec_list:[
-  {
-    script:"$('.permission input[type=checkbox]').unbind('click').on('click',function(e){\n\
-    	var checked = $(this).is(':checked');\n\
-    	var p = $(this).parent();\n\
-    	$('input[type=checkbox]',p).prop('checked',checked);\n\
-    });",
-    status:1,
-    timeout:0,
-    title:"IT门系统角色全选",
-    desc:"角色增加了操作父节点，即是操作子节点",
-    urls:["http://it.men.test.mi.com/role/update","http://it.men.test.mi.com/role/create"]
-  },
     {
-      script:"$('#miniLogin_username').val('huweisong');$('#miniLogin_pwd').val('huweisong');",
+      script:"$('#search').val('小米mix2');",
       status:1,
       timeout:0,
-      title:"开发环境cas登录",
-      desc:"添加用户名密码",
-      urls:["https://casdev.mioffice.cn/login"]
+      title:"小米",
+      desc:"添加搜索mix2",
+      urls:["https://www.mi.com/"]
     },
-      {
-        script:"$('#qr_id_login').addClass('hide');$('#account_login').removeClass('hide');$('#switcher_alogin>a').trigger('click');$('#miniLogin_username').val('huweisong');$('#miniLogin_pwd').val('huweisong');",
-        status:1,
-        timeout:500,
-        title:"线上环境cas登录",
-        desc:"添加用户名密码",
-        urls:["https://cas.mioffice.cn/login"]
-      },
 ]};
 var _HU_cfg_ready = false;
 //加载配置
