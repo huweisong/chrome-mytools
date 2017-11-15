@@ -1,0 +1,33 @@
+{
+    "name": "我的工具",
+    "description": "1：二维码功能。\r\n",
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "icons": {
+        "16": "com/img/icon16.png",
+        "128": "com/img/icon128.png"
+    },
+    "permissions": ["tabs", "contextMenus", "clipboardWrite"
+                , "webRequest","http://*/*", "https://*/*"
+        , "storage"
+    , "notifications", "downloads"],//权限管理
+    "background": {
+        "scripts": ["/com/js/fun.js", "/menu/qrcode.js", "/background.js"]//背后执行的js
+    },
+    "web_accessible_resources": [],
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "css": [],
+        "js": ["/com/js/cfg.js","/com/js/fun.js","/com/js/jquery-3.2.1.min.js","/content_scripts/mytools.js"]
+    }],
+    "options_page": "options/index.html",//选项配置页面
+    "browser_action": {
+        "default_icon": {//图标
+            "19": "com/img/icon16.png",
+            "19": "com/img/icon19.png",
+            "38": "com/img/icon38.png"
+        },
+        "default_title": "我的工具",
+        "default_popup": "popup/index.html"//弹出页面
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>我的实用工具</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../com/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="main">
+        <div id="page_qrcode"></div>
+        <div class="panel panel-default">
+          <div class="panel-heading" style="cursor:pointer;">
+            <h3 class="panel-title">给页面注入自己想用的JS脚本</h3>
+          </div>
+          <div class="panel-body" id="content_scripts_exec_panel">
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" style="cursor:pointer;">
+            <h3 class="panel-title">二维码插件指南</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>浏览器右上角插件图标,显示地址栏地址二维码</li>
+              <li>在网页上选中文字,右击生产二维码,便于手机上获取文本</li>
+              <li>在网页上右击图片,选取二维码功能
+                <ul>
+                  <li>如果是二维码,可以获取二维码内容</li>
+                  <li>获取图片地址</li>
+                  <li>图片另存为</li>
+                  <li>新开窗口查看图片</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p><a href="https://micode.be.xiaomi.com/huweisong/">作者：胡神父huweisong@xiaomi.com</a></p>
+      </div>
+
+        <script src="../com/js/jquery-3.2.1.min.js"></script>
+        <script src="../com/js/bootstrap.min.js"></script>
+        <script src="../com/js/fun.js"></script>
+        <script src="script.js"></script>
+        <script src="../com/js/cfg.js"></script>
+    </body>
+</html>
