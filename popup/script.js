@@ -17,12 +17,6 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     });
 });
 
-function setSearchTime(data, tab_id){
-    chrome.tabs.sendMessage(tab_id, {op: "set_search_time",data:data}, function(response) {
-        console.log(response);
-    });
-}
-
 //配置文件会调用此
 function cfgReadyFun(cfg) {
   cfg = typeof(cfg) == "undefined" ? _HU_cfg : cfg ;
